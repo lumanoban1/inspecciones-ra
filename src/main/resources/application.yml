@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: comprobante-crud
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: qoridevs_qoridev
+    hikari:
+      maximum-pool-size: 5
+      connection-timeout: 20000
+    url: jdbc:mysql://69.49.241.94:3306/qoridevs_solutions
+    password: 8%%iB^A]Cq%s
+server:
+  servlet:
+    context-path: /comprobante-crud
+  port: 0
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
+        type:
+          descriptor:
+            sql:
+              BasicBinder: TRACE
+
